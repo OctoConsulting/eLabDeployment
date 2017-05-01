@@ -28,7 +28,7 @@ public class FrontController {
     }
     
     @RequestMapping(value = "/cases", method = RequestMethod.GET)
-    public ResponseEntity<String> getCases() {
+    public ResponseEntity<String> getCases() { 
         logger.info("Front web was called");
         System.out.println("getCases");
         return restTemplate.getForEntity(workerConfig.getURL()+"/cases", String.class, "");
