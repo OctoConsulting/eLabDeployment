@@ -1,0 +1,10 @@
+server:
+  port: 8081
+logging:
+  level:
+    com.octo.elab: INFO
+---
+spring:
+    profiles: heroku
+server:
+  port: ${PORT}

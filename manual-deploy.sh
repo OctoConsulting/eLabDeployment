@@ -1,0 +1,1 @@
+heroku deploy:jar -i worker-service/target/elab-work-0.0.1-SNAPSHOT.jar -j web-service/target/elab-web-0.0.1-SNAPSHOT.jar --app elab-deploy
